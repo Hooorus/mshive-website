@@ -1,5 +1,5 @@
 # mshive-website
-
+Ms. Hive official website project
 ## Project setup
 ```
 npm install
@@ -7,12 +7,12 @@ npm install
 
 ### Compiles and hot-reloads for development
 ```
-npm run serve
+vue-cli-service serve
 ```
 
 ### Compiles and minifies for production
 ```
-npm run build
+vue-cli-service build
 ```
 
 ### Customize configuration
