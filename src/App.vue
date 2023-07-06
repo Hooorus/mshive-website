@@ -78,6 +78,7 @@
 }
 </style>
 <script>
+import styles from './less/variables.less';
 import "./assets/iconfont/iconfont.js";
 import NavigationBar from "@/components/BasicLayout/NavigationBar.vue";
 import FooterBar from "@/components/BasicLayout/FooterBar.vue";

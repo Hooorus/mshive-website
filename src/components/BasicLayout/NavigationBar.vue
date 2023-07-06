@@ -5,25 +5,25 @@
         <!--        <img class="logo" src="../../assets/logo.png">-->
         <div class="brand">Ms. Hive</div>
       </a>
-      <div class="button-container">
-        <div class="button">
+      <div class="nav-button-container">
+        <div class="nav-button">
           <router-link to="/download">
-            <div class="button-text">Download</div>
+            <div class="nav-button-text">Download</div>
           </router-link>
         </div>
-        <div class="button">
+        <div class="nav-button">
           <router-link to="/online">
-            <div class="button-text">Online</div>
+            <div class="nav-button-text">Online</div>
           </router-link>
         </div>
-        <div class="button">
+        <div class="nav-button">
           <a href="https://github.com/Hooorus">
-            <div class="button-text">Github</div>
+            <div class="nav-button-text">Github</div>
           </a>
         </div>
-        <div class="button">
+        <div class="nav-button">
           <router-link to="/about">
-            <div class="button-text">About</div>
+            <div class="nav-button-text">About</div>
           </router-link>
         </div>
       </div>
@@ -68,7 +68,10 @@ export default {
   height: 60px;
   text-decoration: none;
   //box-sizing: border-box;
-  background: linear-gradient(180deg, rgba(8, 72, 168, 0.5), rgba(8, 72, 168, 0.2) 60%, rgba(8, 72, 168, 0.0) 100%);
+  //background: linear-gradient(180deg, rgba(8, 72, 168, 0.5), rgba(8, 72, 168, 0.2) 60%, rgba(8, 72, 168, 0.0) 100%);
+  //background: linear-gradient(90deg, rgba(255, 255, 255, 0.1), rgba(211, 211, 211, 0.3) 20%, rgba(211, 211, 211, 0.3) 80%, rgba(255, 255, 255, 0.1) 100%);
+  backdrop-filter: blur(2px);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
 }
 
 .container {
@@ -77,6 +80,10 @@ export default {
   display: flex;
   justify-content: space-evenly;
   background-color: rgba(211, 211, 211, 0.0);
+}
+
+.container:after {
+  filter: blur(2px);
 }
 
 .logo-container {
@@ -109,14 +116,14 @@ export default {
   text-shadow: 2px 4px 20px rgba(0, 0, 0, 0.3);
 }
 
-.button-container {
+.nav-button-container {
   flex: 4;
   display: flex;
   justify-content: space-evenly;
   margin: 10px;
 }
 
-.button {
+.nav-button {
   flex: 1;
   height: 40px;
   margin: 0 15px;
@@ -126,11 +133,11 @@ export default {
   transition: all 0.3s;
 }
 
-.button:hover, .button:focus {
+.nav-button:hover, .nav-button:focus {
   border-bottom: 3px solid rgba(255, 255, 255, 1);
 }
 
-.button-text {
+.nav-button-text {
 
   font-family: Ubuntu;
   color: white;
@@ -150,10 +157,10 @@ export default {
 .avatar {
   width: 40px;
   height: 40px;
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(211, 217, 225, 0.15);
   border-radius: 50px;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
-
+  backdrop-filter: blur(2px);
   transition: all 0.3s;
 }
 
@@ -172,10 +179,10 @@ export default {
 .translate {
   width: 40px;
   height: 40px;
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(211, 217, 225, 0.15);
   border-radius: 50px;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
-
+  backdrop-filter: blur(2px);
   transition: all 0.3s;
 }
 
@@ -183,7 +190,8 @@ export default {
   cursor: pointer;
   box-shadow: 2px 4px 20px rgba(0, 0, 0, 0.3);
 }
-.logo-translate{
+
+.logo-translate {
   display: block;
   text-align: center;
   height: 40px;
