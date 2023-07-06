@@ -1,32 +1,97 @@
 <template>
   <div id="app">
-    <nav>
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </nav>
-    <router-view/>
+    <!--导航栏-->
+    <transition name="navbar-slide">
+      <NavigationBar></NavigationBar>
+    </transition>
+    <!--<nav>-->
+    <!--  <router-link to="/">Home</router-link>-->
+    <!--  <router-link to="/about">About</router-link>-->
+    <!--</nav>-->
+    <!--视图展示-->
+    <transition name="fade">
+      <router-view/>
+    </transition>
+    <!-- 底部栏-->
+    <transition name="footer-slide">
+      <FooterBar></FooterBar>
+    </transition>
+    <!--线性渐变遮罩层-->
+    <!--    <CoverLayer></CoverLayer>-->
   </div>
 </template>
 
-<style lang="less">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
+<style lang="scss">
+@import "./assets/fonts/font.css";
+
+* {
+  margin: 0 auto;
+  padding: 0;
+  border: 0;
+  text-decoration: none;
 }
 
-nav {
-  padding: 30px;
+.icon {
+  width: 1em;
+  height: 1em;
+  vertical-align: -0.15em;
+  fill: currentColor;
+  overflow: hidden;
+}
 
-  a {
-    font-weight: bold;
-    color: #2c3e50;
+//vue过渡区域
+.fade-enter-active, .fade-leave-active {
+  transition: opacity .5s;
+}
 
-    &.router-link-exact-active {
-      color: #42b983;
-    }
-  }
+//渐变过渡
+.fade-enter, .fade-leave-to {
+  opacity: 0;
+}
+
+//navbar滑动过渡
+.navbar-slide-enter-active {
+  transition: all .4s .5s ease;
+}
+
+.navbar-slide-leave-active {
+  transition: all .4s cubic-bezier(1.0, 0.5, 0.8, 1.0);
+}
+
+.navbar-slide-enter, .navbar-slide-leave-to {
+  transform: translateY(-30px);
+  opacity: 0;
+}
+
+//footer-bar滑动过渡
+.footer-slide-enter-active {
+  transition: all .4s .5s ease;
+}
+
+.footer-slide-leave-active {
+  transition: all .4s cubic-bezier(1.0, 0.5, 0.8, 1.0);
+}
+
+.footer-slide-enter, .footer-slide-leave-to {
+  transform: translateY(30px);
+  opacity: 0;
 }
 </style>
+<script>
+import "./assets/iconfont/iconfont.js";
+import NavigationBar from "@/components/BasicLayout/NavigationBar.vue";
+import FooterBar from "@/components/BasicLayout/FooterBar.vue";
+import CoverLayer from "@/components/BasicLayout/CoverLayer.vue";
+
+export default {
+  // name: "App",
+  components: {
+    NavigationBar,
+    FooterBar,
+    CoverLayer
+  },
+  data() {
+    return {}
+  }
+}
+</script>

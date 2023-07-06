@@ -1,0 +1,91 @@
+@font-face {
+  font-family: "iconfont"; /* Project id 4154265 */
+  src: url('iconfont.woff2?t=1688621441988') format('woff2'),
+       url('iconfont.woff?t=1688621441988') format('woff'),
+       url('iconfont.ttf?t=1688621441988') format('truetype');
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-tuitetwitter44:before {
+  content: "\e9be";
+}
+
+.icon-facebook1:before {
+  content: "\e66e";
+}
+
+.icon-instagram1:before {
+  content: "\e6fc";
+}
+
+.icon-youtube1:before {
+  content: "\e621";
+}
+
+.icon-zhanghao:before {
+  content: "\e60d";
+}
+
+.icon-zhanghaodenglu:before {
+  content: "\e61b";
+}
+
+.icon-ic_account_line:before {
+  content: "\e609";
+}
+
+.icon-hiddenpassword:before {
+  content: "\ea22";
+}
+
+.icon-showpassword:before {
+  content: "\ea3f";
+}
+
+.icon-android:before {
+  content: "\e669";
+}
+
+.icon-linux:before {
+  content: "\e6c1";
+}
+
+.icon-ios:before {
+  content: "\e601";
+}
+
+.icon-instagram:before {
+  content: "\e87f";
+}
+
+.icon-angle-right:before {
+  content: "\e84e";
+}
+
+.icon-angle-left:before {
+  content: "\e84f";
+}
+
+.icon-windows:before {
+  content: "\e710";
+}
+
+.icon-facebook:before {
+  content: "\e729";
+}
+
+.icon-youtube:before {
+  content: "\e765";
+}
+
+.icon-translate:before {
+  content: "\e64e";
+}
+
