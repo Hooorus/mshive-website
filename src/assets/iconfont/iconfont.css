@@ -1,8 +1,8 @@
 @font-face {
   font-family: "iconfont"; /* Project id 4154265 */
-  src: url('iconfont.woff2?t=1688621441988') format('woff2'),
-       url('iconfont.woff?t=1688621441988') format('woff'),
-       url('iconfont.ttf?t=1688621441988') format('truetype');
+  src: url('iconfont.woff2?t=1688706090064') format('woff2'),
+       url('iconfont.woff?t=1688706090064') format('woff'),
+       url('iconfont.ttf?t=1688706090064') format('truetype');
 }
 
 .iconfont {
@@ -11,6 +11,14 @@
   font-style: normal;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-left:before {
+  content: "\e83d";
+}
+
+.icon-right:before {
+  content: "\e840";
 }
 
 .icon-tuitetwitter44:before {
@@ -63,14 +71,6 @@
 
 .icon-instagram:before {
   content: "\e87f";
-}
-
-.icon-angle-right:before {
-  content: "\e84e";
-}
-
-.icon-angle-left:before {
-  content: "\e84f";
 }
 
 .icon-windows:before {

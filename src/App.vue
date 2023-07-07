@@ -40,11 +40,11 @@
 }
 
 //vue过渡区域
+//渐变过渡
 .fade-enter-active, .fade-leave-active {
   transition: opacity .5s;
 }
 
-//渐变过渡
 .fade-enter, .fade-leave-to {
   opacity: 0;
 }
@@ -78,7 +78,6 @@
 }
 </style>
 <script>
-import styles from './less/variables.less';
 import "./assets/iconfont/iconfont.js";
 import NavigationBar from "@/components/BasicLayout/NavigationBar.vue";
 import FooterBar from "@/components/BasicLayout/FooterBar.vue";

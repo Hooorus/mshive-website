@@ -6,6 +6,20 @@
   "description": "",
   "glyphs": [
     {
+      "icon_id": "34453005",
+      "name": "left",
+      "font_class": "left",
+      "unicode": "e83d",
+      "unicode_decimal": 59453
+    },
+    {
+      "icon_id": "34453038",
+      "name": "right",
+      "font_class": "right",
+      "unicode": "e840",
+      "unicode_decimal": 59456
+    },
+    {
       "icon_id": "866401",
       "name": "推特_twitter44",
       "font_class": "tuitetwitter44",
@@ -95,20 +109,6 @@
       "font_class": "instagram",
       "unicode": "e87f",
       "unicode_decimal": 59519
-    },
-    {
-      "icon_id": "6151396",
-      "name": "angle-right",
-      "font_class": "angle-right",
-      "unicode": "e84e",
-      "unicode_decimal": 59470
-    },
-    {
-      "icon_id": "6151456",
-      "name": "angle-left",
-      "font_class": "angle-left",
-      "unicode": "e84f",
-      "unicode_decimal": 59471
     },
     {
       "icon_id": "7239586",
