@@ -9,16 +9,24 @@
     <div class="middle-display">
       <transition name="slide" mode="out-in">
         <div class="slogan" v-if="bkgSelection === 0" key="bkg1">
-          Convenient & Fast Tool<br>Recording & Search Item
+          {{ $t('homeView.slogan1_bkg1') }}
+          <br>
+          {{ $t('homeView.slogan1_bkg2') }}
         </div>
         <div class="slogan" v-else-if="bkgSelection === 1" key="bkg2">
-          Convenient & Fast<br>Use Efficient Elastic Search&reg;
+          {{ $t('homeView.slogan2_bkg1') }}
+          <br>
+          {{ $t('homeView.slogan2_bkg2') }}
         </div>
         <div class="slogan" v-else-if="bkgSelection === 2" key="bkg3">
-          Multiplatform:<br>Mobile, Web, Desktop, Embed
+          {{ $t('homeView.slogan3_bkg1') }}
+          <br>
+          {{ $t('homeView.slogan3_bkg2') }}
         </div>
         <div class="slogan" v-else-if="bkgSelection === 3" key="bkg4">
-          Recording & Search Item<br>Cloud Storage & Memory
+          {{ $t('homeView.slogan4_bkg1') }}
+          <br>
+          {{ $t('homeView.slogan4_bkg2') }}
         </div>
       </transition>
       <div class="visit-area">
@@ -27,7 +35,7 @@
             <use xlink:href="#icon-left"></use>
           </svg>
         </button>
-        <button class="button">Start</button>
+        <button class="button">start</button>
         <button class="change-bkg-button button-right" @click="changeBackgroundSub(); bkgTrigger();">
           <svg class="icon" aria-hidden="true">
             <use xlink:href="#icon-right"></use>
@@ -46,6 +54,7 @@ import bkg4 from "../../assets/images/bkg3.jpg";
 
 export default {
   name: "HomeView",
+  computed: {},
   data() {
     return {
       // 背景与转换操作

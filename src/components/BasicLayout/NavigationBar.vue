@@ -8,22 +8,22 @@
       <div class="nav-button-container">
         <div class="nav-button">
           <router-link to="/download">
-            <div class="nav-button-text">Download</div>
+            <div class="nav-button-text">{{ $t('navigationBar.download') }}</div>
           </router-link>
         </div>
         <div class="nav-button">
           <router-link to="/online">
-            <div class="nav-button-text">Online</div>
+            <div class="nav-button-text">{{ $t('navigationBar.online') }}</div>
           </router-link>
         </div>
         <div class="nav-button">
           <a href="https://github.com/Hooorus">
-            <div class="nav-button-text">Github</div>
+            <div class="nav-button-text">{{ $t('navigationBar.github') }}</div>
           </a>
         </div>
         <div class="nav-button">
           <router-link to="/about">
-            <div class="nav-button-text">About</div>
+            <div class="nav-button-text">{{ $t('navigationBar.about') }}</div>
           </router-link>
         </div>
       </div>
