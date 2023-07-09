@@ -79,6 +79,7 @@
 </style>
 <script>
 import "./assets/iconfont/iconfont.js";
+import "/node_modules/flag-icons/css/flag-icons.min.css";
 import NavigationBar from "@/components/BasicLayout/NavigationBar.vue";
 import FooterBar from "@/components/BasicLayout/FooterBar.vue";
 import CoverLayer from "@/components/BasicLayout/CoverLayer.vue";

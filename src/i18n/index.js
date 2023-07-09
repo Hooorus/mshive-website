@@ -9,9 +9,10 @@ import jp from "./jp.js";
 import es from "./es.js";
 import kr from "./kr.js";
 import ar from "./ar.js";
+import ru from "./ru.js";
 
 const i18n = new VueI18n({
-    locale: localStorage.getItem('lang') || 'kr',
+    locale: localStorage.getItem('lang') || 'es',
     messages: {
         zh_cn,
         zh_tw,
@@ -20,6 +21,7 @@ const i18n = new VueI18n({
         es,
         kr,
         ar,
+        ru,
     }
 })
 export default i18n

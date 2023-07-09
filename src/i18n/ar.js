@@ -1,6 +1,6 @@
 //بالعربية
 const ar = {
-    language:{
+    language: {
         zh_cn: '中文（简）',
         zh_tw: '中文（繁）',
         en: 'English',
@@ -8,6 +8,7 @@ const ar = {
         es: 'Español',
         kr: '한국어',
         ar: 'بالعربية',
+        ru: 'Русский',
     },
     navigationBar: {
         download: 'للتحميل',
@@ -17,14 +18,19 @@ const ar = {
         translate: {},
     },
     homeView: {
-        slogan1_bkg1: 'أداة مريحة',
-        slogan1_bkg2: 'تسجيل والبحث عن البنود',
-        slogan2_bkg1: 'مريحة وسريعة',
-        slogan2_bkg2: 'Elastic Search كفاءة استخدام',
-        slogan3_bkg1: 'عبر منصة:',
-        slogan3_bkg2: 'موبايل ، ويب ، سطح المكتب ، جزءا لا يتجزأ من',
-        slogan4_bkg1: 'تسجيل والبحث عن البنود',
-        slogan4_bkg2: 'سحابة التخزين والذاكرة',
+        slogan_info: {
+            slogan1_bkg1: 'أداة مريحة',
+            slogan1_bkg2: 'تسجيل والبحث عن البنود',
+            slogan2_bkg1: 'مريحة وسريعة',
+            slogan2_bkg2: 'Elastic Search كفاءة استخدام',
+            slogan3_bkg1: 'عبر منصة:',
+            slogan3_bkg2: 'موبايل ، ويب ، سطح المكتب ، جزءا لا يتجزأ من',
+            slogan4_bkg1: 'تسجيل والبحث عن البنود',
+            slogan4_bkg2: 'سحابة التخزين والذاكرة',
+        },
+        buttons: {
+            start_button: 'يبدأ',
+        },
     }
 }
 export default ar;

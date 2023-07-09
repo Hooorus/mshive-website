@@ -9,24 +9,24 @@
     <div class="middle-display">
       <transition name="slide" mode="out-in">
         <div class="slogan" v-if="bkgSelection === 0" key="bkg1">
-          {{ $t('homeView.slogan1_bkg1') }}
+          {{ $t('homeView.slogan_info.slogan1_bkg1') }}
           <br>
-          {{ $t('homeView.slogan1_bkg2') }}
+          {{ $t('homeView.slogan_info.slogan1_bkg2') }}
         </div>
         <div class="slogan" v-else-if="bkgSelection === 1" key="bkg2">
-          {{ $t('homeView.slogan2_bkg1') }}
+          {{ $t('homeView.slogan_info.slogan2_bkg1') }}
           <br>
-          {{ $t('homeView.slogan2_bkg2') }}
+          {{ $t('homeView.slogan_info.slogan2_bkg2') }}
         </div>
         <div class="slogan" v-else-if="bkgSelection === 2" key="bkg3">
-          {{ $t('homeView.slogan3_bkg1') }}
+          {{ $t('homeView.slogan_info.slogan3_bkg1') }}
           <br>
-          {{ $t('homeView.slogan3_bkg2') }}
+          {{ $t('homeView.slogan_info.slogan3_bkg2') }}
         </div>
         <div class="slogan" v-else-if="bkgSelection === 3" key="bkg4">
-          {{ $t('homeView.slogan4_bkg1') }}
+          {{ $t('homeView.slogan_info.slogan4_bkg1') }}
           <br>
-          {{ $t('homeView.slogan4_bkg2') }}
+          {{ $t('homeView.slogan_info.slogan4_bkg2') }}
         </div>
       </transition>
       <div class="visit-area">
@@ -35,7 +35,7 @@
             <use xlink:href="#icon-left"></use>
           </svg>
         </button>
-        <button class="button">start</button>
+        <button class="button">{{ $t('homeView.buttons.start_button') }}</button>
         <button class="change-bkg-button button-right" @click="changeBackgroundSub(); bkgTrigger();">
           <svg class="icon" aria-hidden="true">
             <use xlink:href="#icon-right"></use>
@@ -173,6 +173,7 @@ export default {
   line-height: 80px;
   color: white;
   font-family: "Monotype Corsiva";
+  //font-family: "ZCOOL Addict Italic 01";
   font-size: 50px;
   text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
   //border: 1px solid white;
