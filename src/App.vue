@@ -17,7 +17,7 @@
       <FooterBar></FooterBar>
     </transition>
     <!--线性渐变遮罩层-->
-    <!--    <CoverLayer></CoverLayer>-->
+    <!--<CoverLayer></CoverLayer>-->
   </div>
 </template>
 

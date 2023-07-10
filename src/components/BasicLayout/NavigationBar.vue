@@ -123,7 +123,6 @@ export default {
 
 .logo-container {
   flex: 2;
-
   display: flex;
   justify-content: space-evenly;
 }
@@ -187,7 +186,6 @@ export default {
 .user-container {
   flex: 1;
   display: flex;
-
   margin: 10px;
   line-height: 40px;
 }
@@ -241,9 +239,9 @@ export default {
 
 .translate-box {
   display: flex;
-  flex-direction: column;
   width: 110px;
   height: 230px;
+  flex-direction: column;
   //border: 1px solid #ffffff;
 }
 
@@ -266,7 +264,7 @@ export default {
   line-height: 30px;
   margin-top: 3px;
   padding-left: 5px;
-  background-color: #ffffffcc;
+  background-color: #ffffff44;
   border-radius: 3px;
   box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.25);
   //border: 1px solid #ffffff;
@@ -284,6 +282,278 @@ export default {
 .translate-item-icon {
   border-radius: 3px;
   //box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+@media (min-width: 0px) {
+  #navbar {
+    height: 100px;
+  }
+  .container {
+    width: 375px;
+    height: 100px;
+    display: flex;
+    justify-content: space-evenly;
+    //border: 1px solid #ffffff;
+  }
+  .logo-container {
+    flex: 1;
+    display: flex;
+    //border: 1px solid #ffffff;
+  }
+  .brand {
+    flex: 1;
+    text-align: center;
+    font-size: 30px;
+  }
+  .nav-button-container {
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin: 0px;
+  }
+  .nav-button {
+    flex: 1;
+    height: 20px;
+    margin: 0 0px;
+  }
+  .nav-button-text {
+    font-size: 18px;
+    line-height: 20px;
+  }
+}
+
+@media (min-width: 540px) {
+  #navbar {
+    height: 100px;
+  }
+  .container {
+    width: 570px;
+    height: 100px;
+    display: flex;
+    justify-content: space-evenly;
+    //border: 1px solid #ffffff;
+  }
+  .logo-container {
+    flex: 0.5;
+    //border: 1px solid #ffffff;
+  }
+  .brand {
+    text-align: center;
+    font-size: 40px;
+  }
+  .nav-button-container {
+    flex: 3;
+    width: 300px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: center;
+    margin: 0 0px;
+    //border: 1px solid #ffffff;
+  }
+  .nav-button {
+    height: 50px;
+    margin: 0 0px;
+    border-bottom: 3px solid rgba(255, 255, 255, 0);
+    //border: 1px solid #ffffff;
+  }
+  .nav-button-text {
+    font-size: 20px;
+    line-height: 50px;
+    //border: 1px solid #ffffff;
+  }
+}
+
+@media (min-width: 1200px) {
+  #navbar {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    //margin-top: 10px;
+    position: fixed !important;
+    z-index: 100;
+    width: 100vw;
+    height: 60px;
+    text-decoration: none;
+    //box-sizing: border-box;
+    //background: linear-gradient(110deg, rgba(8, 72, 168, 0.3) 0%, rgba(8, 72, 168, 0.1) 15%, rgba(8, 72, 168, 0.1) 85%, rgba(8, 72, 168, 0.3) 100%);
+    //background: linear-gradient(90deg, rgba(255, 255, 255, 0.1), rgba(211, 211, 211, 0.3) 20%, rgba(211, 211, 211, 0.3) 80%, rgba(255, 255, 255, 0.1) 100%);
+    backdrop-filter: blur(6px);
+    //border: 1px solid #ffffff;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
+  }
+
+  .container {
+    width: 1200px;
+    height: 60px;
+    display: flex;
+    justify-content: space-evenly;
+    //border: 1px solid #ffffff;
+    background-color: rgba(211, 211, 211, 0.0);
+  }
+
+  .logo-container {
+    flex: 2;
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .brand {
+    flex: 1;
+
+    line-height: 40px;
+    margin: 10px;
+
+    font-family: "Monotype Corsiva";
+    font-weight: 500;
+    color: #ffffff;
+    font-size: 40px;
+    text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+
+    transition: all 0.3s;
+  }
+
+  .brand:hover, .brand:focus {
+    text-shadow: 2px 4px 20px rgba(0, 0, 0, 0.3);
+  }
+
+  .nav-button-container {
+    flex: 4;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 10px;
+  }
+
+  .nav-button {
+    flex: 1;
+    height: 40px;
+    margin: 0 15px;
+    text-align: center;
+    border-bottom: 3px solid rgba(255, 255, 255, 0);
+    background-color: rgba(8, 72, 168, 0.0);
+    //border-radius: 5px;
+    //background-position-y: 40px;
+    transition: all 0.3s;
+  }
+
+  .nav-button:hover, .nav-button:focus {
+    background-color: rgba(211, 217, 225, 0.15);
+    border-bottom: 3px solid rgba(255, 255, 255, 1);
+  }
+
+  .nav-button-text {
+
+    font-family: Ubuntu;
+    color: white;
+    font-size: 22px;
+    line-height: 40px;
+    text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+  }
+
+  .user-container {
+    flex: 1;
+    display: flex;
+
+    //margin: 5px;
+    line-height: 40px;
+  }
+
+  .avatar {
+    width: 40px;
+    height: 40px;
+    //margin: 0px;
+    background-color: rgba(211, 217, 225, 0.15);
+    //background-color: rgba(48, 180, 246, 0.3);
+    border-radius: 50px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(2px);
+    transition: all 0.3s;
+  }
+
+  .avatar:hover {
+    box-shadow: 2px 4px 20px rgba(0, 0, 0, 0.3);
+  }
+
+  .logo-account {
+    display: block;
+    text-align: center;
+    height: 40px;
+    color: #ffffff;
+    font-size: 28px;
+  }
+
+  .translate {
+    width: 40px;
+    height: 40px;
+    //margin: 0px;
+    background-color: rgba(211, 217, 225, 0.15);
+    //background-color: rgba(48, 180, 246, 0.3);
+    border-radius: 50px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(2px);
+    transition: all 0.3s;
+  }
+
+  .translate:hover {
+    cursor: pointer;
+    box-shadow: 2px 4px 20px rgba(0, 0, 0, 0.3);
+  }
+
+  .logo-translate {
+    display: block;
+    text-align: center;
+    height: 40px;
+    color: #ffffff;
+    font-size: 25px;
+  }
+
+  .translate-box {
+    display: flex;
+    flex-direction: column;
+    width: 110px;
+    height: 230px;
+    //border: 1px solid #ffffff;
+  }
+
+  .translate-container {
+    margin-top: 20px;
+    padding-bottom: 2px;
+    width: 105px;
+    height: 166px;
+    overflow: scroll;
+    //border: 1px solid #ffffff;
+  }
+
+  ::-webkit-scrollbar {
+    display: none;
+  }
+
+  .translate-item {
+    width: 95px;
+    height: 30px;
+    line-height: 30px;
+    margin-top: 3px;
+    padding-left: 5px;
+    background-color: #ffffff44;
+    border-radius: 3px;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.25);
+    //border: 1px solid #ffffff;
+    font-family: Ubuntu;
+    color: #222222;
+    cursor: pointer;
+  }
+
+  .translate-item:hover {
+    background-color: rgba(8, 72, 168, 0.8);
+    color: #eeeeee;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+  }
+
+  .translate-item-icon {
+    border-radius: 3px;
+    //box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  }
 }
 
 //translate集合滑动过渡
