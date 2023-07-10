@@ -6,7 +6,7 @@
              v-if="card.name==='Windows'">
           <button class="download-version">Win11</button>
           <button class="download-version">Win10</button>
-          <button class="download-version">Win8</button>
+          <button class="download-version">Win7</button>
         </div>
         <div class="download-card-cover-layer" :style="'background-color: '+card.backgroundColor"
              v-if="card.name==='Linux'">
@@ -118,8 +118,11 @@ export default {
     flex-direction: column;
     align-content: space-evenly;
     background: rgba(8, 72, 168, 0.6);
+    box-shadow: 0px -2px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 0 0 15px 15px;
     opacity: 0;
     transition: all 0.3s;
+    overflow: hidden;
 
     .download-version {
       margin: 15px 10px 10px;
@@ -131,10 +134,9 @@ export default {
       font-size: 24px;
       color: white;
       text-align: center;
+      transition: all 0.3s;
       //border: 1px solid white;
     }
-
-    overflow: hidden;
   }
 
   .download-card-name {
@@ -199,6 +201,11 @@ export default {
   .download-background {
     flex: 5;
     background-size: 300px;
+  }
+
+  .download-version:hover {
+    background-color: #ffffff88;
+    box-shadow: 2px 4px 20px rgba(0, 0, 0, 0.25);
   }
 }
 </style>
