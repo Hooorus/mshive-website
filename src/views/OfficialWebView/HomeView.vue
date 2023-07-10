@@ -47,10 +47,10 @@
 </template>
 
 <script>
-import bkg1 from "../../assets/images/hennybabe1k.png";
-import bkg2 from "../../assets/images/bkg1.jpg";
-import bkg3 from "../../assets/images/bkg2.jpg";
-import bkg4 from "../../assets/images/bkg3.jpg";
+import bkg1 from "../../assets/images/bkg1.png";
+import bkg2 from "../../assets/images/bkg2.jpg";
+import bkg3 from "../../assets/images/bkg3.jpg";
+import bkg4 from "../../assets/images/bkg4.jpg";
 
 export default {
   name: "HomeView",
@@ -156,7 +156,7 @@ export default {
   height: 60%;
   width: 1250px;
   margin: 10% auto;
-  /*border: 1px solid white;*/
+  //border: 1px solid white;
   position: center;
   line-height: 100%;
 
@@ -189,7 +189,7 @@ export default {
   margin: 0 10px;
   cursor: pointer;
   border-radius: 50px;
-  background: linear-gradient(120deg, rgb(255, 255, 255, 1.0) 0%, rgb(255, 255, 255, 1.0) 50%, rgb(255, 255, 255, 1.0) 100%);
+  background: linear-gradient(120deg, rgba(255, 255, 255, 1.0) 0%, rgba(255, 255, 255, 1.0) 50%, rgba(255, 255, 255, 1.0) 100%);
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
 
   font-family: Ubuntu;

@@ -31,6 +31,11 @@ const kr = {
         buttons: {
             start_button: '시작',
         },
-    }
+    },
+    downloadView: {
+        download_card:{
+            download_button: '다운로드',
+        }
+    },
 }
 export default kr;

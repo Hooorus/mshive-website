@@ -31,6 +31,11 @@ const zh_cn = {
         buttons: {
             start_button: '开始',
         },
-    }
+    },
+    downloadView: {
+        download_card:{
+            download_button: '下载',
+        }
+    },
 }
 export default zh_cn;

@@ -31,6 +31,11 @@ const ar = {
         buttons: {
             start_button: 'يبدأ',
         },
-    }
+    },
+    downloadView: {
+        download_card:{
+            download_button: 'للتحميل',
+        }
+    },
 }
 export default ar;

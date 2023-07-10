@@ -31,6 +31,11 @@ const jp = {
         buttons: {
             start_button: '始める',
         },
-    }
+    },
+    downloadView: {
+        download_card:{
+            download_button: 'ダウンロード',
+        }
+    },
 }
 export default jp;

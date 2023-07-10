@@ -12,7 +12,7 @@ import ar from "./ar.js";
 import ru from "./ru.js";
 
 const i18n = new VueI18n({
-    locale: localStorage.getItem('lang') || 'es',
+    locale: localStorage.getItem('lang') || 'en',
     messages: {
         zh_cn,
         zh_tw,

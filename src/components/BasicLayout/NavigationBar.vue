@@ -103,7 +103,7 @@ export default {
   //box-sizing: border-box;
   //background: linear-gradient(110deg, rgba(8, 72, 168, 0.3) 0%, rgba(8, 72, 168, 0.1) 15%, rgba(8, 72, 168, 0.1) 85%, rgba(8, 72, 168, 0.3) 100%);
   //background: linear-gradient(90deg, rgba(255, 255, 255, 0.1), rgba(211, 211, 211, 0.3) 20%, rgba(211, 211, 211, 0.3) 80%, rgba(255, 255, 255, 0.1) 100%);
-  backdrop-filter: blur(2px);
+  backdrop-filter: blur(6px);
   //border: 1px solid #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
 }
@@ -117,9 +117,9 @@ export default {
   background-color: rgba(211, 211, 211, 0.0);
 }
 
-.container:after {
-  filter: blur(2px);
-}
+//.container:after {
+//  filter: blur(2px);
+//}
 
 .logo-container {
   flex: 2;
@@ -164,11 +164,14 @@ export default {
   margin: 0 15px;
   text-align: center;
   border-bottom: 3px solid rgba(255, 255, 255, 0);
-
+  background-color: rgba(8, 72, 168, 0.0);
+  //border-radius: 5px;
+  //background-position-y: 40px;
   transition: all 0.3s;
 }
 
 .nav-button:hover, .nav-button:focus {
+  background-color: rgba(211, 217, 225, 0.15);
   border-bottom: 3px solid rgba(255, 255, 255, 1);
 }
 
@@ -263,17 +266,18 @@ export default {
   line-height: 30px;
   margin-top: 3px;
   padding-left: 5px;
-  background-color: rgba(211, 217, 225, 0.15);
+  background-color: #ffffffcc;
   border-radius: 3px;
   box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.25);
   //border: 1px solid #ffffff;
   font-family: Ubuntu;
-  color: #eeeeee;
+  color: #222222;
   cursor: pointer;
 }
 
 .translate-item:hover {
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: rgba(8, 72, 168, 0.8);
+  color: #eeeeee;
   box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
 }
 

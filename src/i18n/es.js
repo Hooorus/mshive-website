@@ -31,6 +31,11 @@ const es = {
         buttons: {
             start_button: 'Comenzar',
         },
-    }
+    },
+    downloadView: {
+        download_card:{
+            download_button: 'Descargar',
+        }
+    },
 }
 export default es;

@@ -31,6 +31,11 @@ const zh_tw = {
         buttons: {
             start_button: '開始',
         },
-    }
+    },
+    downloadView: {
+        download_card:{
+            download_button: '下載',
+        }
+    },
 }
 export default zh_tw;

@@ -31,6 +31,11 @@ const ru = {
         buttons: {
             start_button: 'Начинать',
         },
-    }
+    },
+    downloadView: {
+        download_card:{
+            download_button: 'Скачать',
+        }
+    },
 }
 export default ru;
