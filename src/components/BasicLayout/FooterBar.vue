@@ -78,4 +78,16 @@ export default {
   font-family: "Monotype Corsiva";
   /*font-family: Ubuntu;*/
 }
+@media (min-width: 0px) {
+  .button-container {
+    width: 300px;
+    /*border: 1px solid white;*/
+  }
+}
+@media (min-width: 600px) {
+  .button-container {
+    width: 600px;
+    /*border: 1px solid white;*/
+  }
+}
 </style>

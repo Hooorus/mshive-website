@@ -216,4 +216,90 @@ export default {
   color: #ffffff;
   background-color: transparent;
 }
+
+@media (min-width: 0px) {
+  .middle-display {
+    //height: 10%;
+    width: 80%;
+    margin: 120px auto;
+  }
+
+  .slogan {
+    height: 60%;
+    line-height: 40px;
+    font-size: 30px;
+  }
+
+  .button {
+    width: 60px;
+    height: 30px;
+    margin: 0 5px;
+    font-size: 16px;
+    //border: 1px solid white;
+  }
+
+  .change-bkg-button {
+    width: 30px;
+    height: 30px;
+    margin: 0 5px;
+    font-size: 30px;
+  }
+}
+
+@media (min-width: 850px) {
+  .middle-display {
+    //height: 40%;
+    width: 80%;
+    margin: 120px auto;
+  }
+
+  .slogan {
+    height: 60%;
+    line-height: 40px;
+    font-size: 40px;
+  }
+
+  .button {
+    width: 100px;
+    height: 40px;
+    margin: 0 5px;
+    font-size: 20px;
+    //border: 1px solid white;
+  }
+
+  .change-bkg-button {
+    width: 80px;
+    height: 40px;
+    margin: 0 5px;
+    font-size: 40px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .middle-display {
+    height: 60%;
+    width: 1250px;
+    margin: 10% auto;
+  }
+
+  .slogan {
+    height: 70%;
+    line-height: 80px;
+    font-size: 50px;
+  }
+
+  .button {
+    width: 150px;
+    height: 50px;
+    margin: 0 10px;
+    font-size: 20px;
+  }
+
+  .change-bkg-button {
+    width: 30px;
+    height: 50px;
+    margin: 0 10px;
+    font-size: 40px;
+  }
+}
 </style>
