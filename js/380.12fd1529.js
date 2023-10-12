@@ -1,0 +1,2 @@
+"use strict";(self["webpackChunkmshive_website"]=self["webpackChunkmshive_website"]||[]).push([[380],{8380:function(e,n,t){t.r(n),t.d(n,{default:function(){return a}});var u=function(){var e=this,n=e._self._c;return n("div")},s=[],i={name:"AboutView"},r=i,c=t(1001),l=(0,c.Z)(r,u,s,!1,null,"163bd0ac",null),a=l.exports}}]);
+//# sourceMappingURL=380.12fd1529.js.map
